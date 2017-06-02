@@ -8,15 +8,28 @@ body {
   height: 300px;
   position: absolute;
   bottom: -20px;
+  animation: walk 10s linear infinite;
 }
 
-/*
 @keyframes walk {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 85%;
+    transform:rotateY(0deg);
+ }
+ 51% {
+   transform:rotateY(180deg);
 }
-
+ 100% {
+   left: 0;
+   transform:rotateY(180deg);
+ }
+}
 @keyframes moonwalk {
-}
 
+}
 @keyframes pacer {
 }
 
@@ -25,4 +38,3 @@ body {
 
 @keyframes larrybird {
 }
-*/
